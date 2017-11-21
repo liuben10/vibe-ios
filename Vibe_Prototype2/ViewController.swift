@@ -11,9 +11,10 @@ import CoreBluetooth
 
 class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate{
 
-    @IBAction func doesSomething(_ sender: Any) {
-        print("Wow, this button does something!")
+    @IBAction func nearbyUsers(_ sender: Any) {
+        print("Loads Nearby Users")
     }
+    
     let temperatureLabelFontName = "HelveticaNeue-Thin"
     let temperatureLabelFontSizeMessage:CGFloat = 56.0
     let temperatureLabelFontSizeTemp:CGFloat = 81.0

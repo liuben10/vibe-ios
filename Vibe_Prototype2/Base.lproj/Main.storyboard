@@ -74,7 +74,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="Nearby"/>
                                 <connections>
-                                    <action selector="doesSomething:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yU5-cn-ciV"/>
+                                    <action selector="nearbyUsers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yU5-cn-ciV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBA-5u-d5S">
