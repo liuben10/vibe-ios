@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreBluetooth
+import FacebookLogin
 
 class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate{
 
