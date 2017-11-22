@@ -1,5 +1,5 @@
 //
-//  ListViewController.swift
+//  DiscoverUserTableViewController.swift
 //  Vibe_Prototype2
 //
 //  Created by Benjamin Liu on 11/21/17.
@@ -8,48 +8,39 @@
 
 import UIKit
 
-class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class DiscoverUserTableViewController: UIViewController,  UITableViewDelegate, UITableViewDataSource {
+
     @IBOutlet weak var tableView: UITableView!
-    
     var users = [User]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print ("Loading Listview Controller")
         
-        self.tableView.register(NearbyTableViewCell.self, forCellReuseIdentifier: "groupcell")
+        users += Const.getNearbyUsers()
+        print ("Discovering Users")
         
-        let loaded = loadNearbyUsers()
-        users += loaded
+        self.tableView.register(NearbyUserTableViewCell.self, forCellReuseIdentifier: "groupcell")
         
         tableView.delegate = self
         tableView.dataSource = self
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func loadNearbyUsers() -> Array<User> {
-        return Const.getNearbyUsers()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count// your number of cell here
+        return users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // your cell coding
+        let cellId = "NearbyUserTableCell"
         print ("Rendering a cell")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ListViewTableCell", for: indexPath) as! NearbyTableViewCell;
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! NearbyUserTableViewCell;
         
         let user = users[indexPath.row]
-        cell.name?.text = user.name
-        cell.status?.text = user.status
+        cell.userName?.text = user.name
+        cell.userStatus?.text = user.status
         
         return cell
     }
@@ -58,7 +49,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         // cell selected code here
         print ("Cell selected")
     }
-    
 
     /*
     // MARK: - Navigation
