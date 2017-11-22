@@ -11,9 +11,10 @@
 		964AEB151FC4B38E00FD381B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AEB131FC4B38E00FD381B /* LoginViewController.swift */; };
 		964AEB161FC4B38E00FD381B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AEB141FC4B38E00FD381B /* LoginViewController.xib */; };
 		964AEB181FC4BC9F00FD381B /* UserLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AEB171FC4BC9F00FD381B /* UserLoader.swift */; };
-		964AEB1F1FC4C67B00FD381B /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AEB1D1FC4C67B00FD381B /* UserTableViewCell.swift */; };
-		964AEB201FC4C67B00FD381B /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AEB1E1FC4C67B00FD381B /* UserTableViewCell.xib */; };
-		964AEB221FC4C9BA00FD381B /* NearbyUserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AEB211FC4C9BA00FD381B /* NearbyUserListTableViewController.swift */; };
+		96CB3B1D1FC4F502009A94CF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB3B1C1FC4F502009A94CF /* ListViewController.swift */; };
+		96CB3B1F1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB3B1E1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift */; };
+		96CB3B211FC5019B009A94CF /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB3B201FC5019B009A94CF /* FriendRequestViewController.swift */; };
+		96CB3B251FC50396009A94CF /* NearbyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB3B241FC50396009A94CF /* NearbyTableViewCell.swift */; };
 		980284E61FC3E0A0006F689B /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980284E51FC3E0A0006F689B /* Consts.swift */; };
 		980284E81FC3E0E2006F689B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980284E71FC3E0E2006F689B /* User.swift */; };
 		980284EA1FC3E14B006F689B /* FriendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980284E91FC3E14B006F689B /* FriendRequest.swift */; };
@@ -49,9 +50,10 @@
 		964AEB131FC4B38E00FD381B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		964AEB141FC4B38E00FD381B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		964AEB171FC4BC9F00FD381B /* UserLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoader.swift; sourceTree = "<group>"; };
-		964AEB1D1FC4C67B00FD381B /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
-		964AEB1E1FC4C67B00FD381B /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
-		964AEB211FC4C9BA00FD381B /* NearbyUserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUserListTableViewController.swift; sourceTree = "<group>"; };
+		96CB3B1C1FC4F502009A94CF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		96CB3B1E1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrinedRequestTableViewCell.swift; sourceTree = "<group>"; };
+		96CB3B201FC5019B009A94CF /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
+		96CB3B241FC50396009A94CF /* NearbyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyTableViewCell.swift; sourceTree = "<group>"; };
 		980284E51FC3E0A0006F689B /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		980284E71FC3E0E2006F689B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		980284E91FC3E14B006F689B /* FriendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequest.swift; sourceTree = "<group>"; };
@@ -137,9 +139,10 @@
 				964AEB131FC4B38E00FD381B /* LoginViewController.swift */,
 				964AEB141FC4B38E00FD381B /* LoginViewController.xib */,
 				964AEB171FC4BC9F00FD381B /* UserLoader.swift */,
-				964AEB1D1FC4C67B00FD381B /* UserTableViewCell.swift */,
-				964AEB1E1FC4C67B00FD381B /* UserTableViewCell.xib */,
-				964AEB211FC4C9BA00FD381B /* NearbyUserListTableViewController.swift */,
+				96CB3B1C1FC4F502009A94CF /* ListViewController.swift */,
+				96CB3B1E1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift */,
+				96CB3B201FC5019B009A94CF /* FriendRequestViewController.swift */,
+				96CB3B241FC50396009A94CF /* NearbyTableViewCell.swift */,
 			);
 			path = Vibe_Prototype2;
 			sourceTree = "<group>";
@@ -293,7 +296,6 @@
 				980961691FC3C73A007577F0 /* LaunchScreen.storyboard in Resources */,
 				980961661FC3C73A007577F0 /* Assets.xcassets in Resources */,
 				980961611FC3C73A007577F0 /* Main.storyboard in Resources */,
-				964AEB201FC4C67B00FD381B /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,13 +382,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CB3B251FC50396009A94CF /* NearbyTableViewCell.swift in Sources */,
 				964AEB151FC4B38E00FD381B /* LoginViewController.swift in Sources */,
-				964AEB221FC4C9BA00FD381B /* NearbyUserListTableViewController.swift in Sources */,
+				96CB3B1F1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift in Sources */,
 				964AEB181FC4BC9F00FD381B /* UserLoader.swift in Sources */,
 				980961641FC3C73A007577F0 /* Vibe_Prototype2.xcdatamodeld in Sources */,
 				980284E61FC3E0A0006F689B /* Consts.swift in Sources */,
-				964AEB1F1FC4C67B00FD381B /* UserTableViewCell.swift in Sources */,
+				96CB3B1D1FC4F502009A94CF /* ListViewController.swift in Sources */,
 				9809615E1FC3C73A007577F0 /* ViewController.swift in Sources */,
+				96CB3B211FC5019B009A94CF /* FriendRequestViewController.swift in Sources */,
 				980284E81FC3E0E2006F689B /* User.swift in Sources */,
 				9809615C1FC3C73A007577F0 /* AppDelegate.swift in Sources */,
 				980284EA1FC3E14B006F689B /* FriendRequest.swift in Sources */,
