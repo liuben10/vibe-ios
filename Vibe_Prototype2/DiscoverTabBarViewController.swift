@@ -1,24 +1,29 @@
 //
-//  DiscoverController.swift
+//  DiscoverTabBarViewController.swift
 //  Vibe_Prototype2
 //
-//  Created by Benjamin Liu on 11/21/17.
+//  Created by Benjamin Liu on 11/22/17.
 //  Copyright © 2017 Danny Shin. All rights reserved.
 //
 
 import UIKit
 
-class DiscoverController: UIViewController {
+class DiscoverTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        var tabFrame:CGRect = self.tabBar.frame
+        tabFrame.origin.y = self.view.frame.origin.y
+        self.tabBar.frame = tabFrame
     }
     
 

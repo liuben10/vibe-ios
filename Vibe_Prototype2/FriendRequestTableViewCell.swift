@@ -1,17 +1,17 @@
 //
-//  NearbyUserTableViewCell.swift
+//  FriendRequestTableViewCell.swift
 //  Vibe_Prototype2
 //
-//  Created by Benjamin Liu on 11/22/17.
+//  Created by Benjamin Liu on 11/21/17.
 //  Copyright © 2017 Danny Shin. All rights reserved.
 //
 
 import UIKit
 
-class NearbyUserTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var userName: UILabel!
-    @IBOutlet weak var userStatus: UILabel!
+class FriendRequestTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var toRequestId: UILabel!
+    @IBOutlet weak var fromRequestId: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

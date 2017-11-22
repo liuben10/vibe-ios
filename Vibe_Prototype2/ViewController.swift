@@ -202,7 +202,6 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         }
     }
     
-    
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         var showAlert = true
         var message = ""

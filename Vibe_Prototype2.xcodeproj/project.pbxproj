@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		944FAEB2020A5C56545AA4DF /* Pods_Vibe_Prototype2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BEF71295CA87FA51AEDC4 /* Pods_Vibe_Prototype2.framework */; };
-		962CDE5F1FC5135B00376F2F /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962CDE5E1FC5135B00376F2F /* DiscoverController.swift */; };
-		962CDE651FC5154800376F2F /* NearbyUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962CDE641FC5154800376F2F /* NearbyUserTableViewCell.swift */; };
-		962CDE671FC5164100376F2F /* DiscoverUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962CDE661FC5164100376F2F /* DiscoverUserTableViewController.swift */; };
+		963D32EC1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D32EB1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift */; };
 		964AEB151FC4B38E00FD381B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AEB131FC4B38E00FD381B /* LoginViewController.swift */; };
 		964AEB161FC4B38E00FD381B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AEB141FC4B38E00FD381B /* LoginViewController.xib */; };
 		964AEB181FC4BC9F00FD381B /* UserLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AEB171FC4BC9F00FD381B /* UserLoader.swift */; };
-		96CB3B1F1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB3B1E1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift */; };
-		96CB3B211FC5019B009A94CF /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB3B201FC5019B009A94CF /* FriendRequestViewController.swift */; };
+		96B3EC891FC5570C008FB664 /* FriendRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EC881FC5570C008FB664 /* FriendRequestTableViewCell.swift */; };
+		96E5829A1FC6004A00D8834A /* NearbyUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E582991FC6004A00D8834A /* NearbyUserTableViewCell.swift */; };
+		96E5829E1FC6011000D8834A /* DiscoverUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5829D1FC6011000D8834A /* DiscoverUserViewController.swift */; };
+		96E582A01FC6022E00D8834A /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */; };
 		980284E61FC3E0A0006F689B /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980284E51FC3E0A0006F689B /* Consts.swift */; };
 		980284E81FC3E0E2006F689B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980284E71FC3E0E2006F689B /* User.swift */; };
 		980284EA1FC3E14B006F689B /* FriendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980284E91FC3E14B006F689B /* FriendRequest.swift */; };
@@ -48,14 +48,14 @@
 
 /* Begin PBXFileReference section */
 		073BEF71295CA87FA51AEDC4 /* Pods_Vibe_Prototype2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vibe_Prototype2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		962CDE5E1FC5135B00376F2F /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
-		962CDE641FC5154800376F2F /* NearbyUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUserTableViewCell.swift; sourceTree = "<group>"; };
-		962CDE661FC5164100376F2F /* DiscoverUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUserTableViewController.swift; sourceTree = "<group>"; };
+		963D32EB1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTabBarViewController.swift; sourceTree = "<group>"; };
 		964AEB131FC4B38E00FD381B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		964AEB141FC4B38E00FD381B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		964AEB171FC4BC9F00FD381B /* UserLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoader.swift; sourceTree = "<group>"; };
-		96CB3B1E1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrinedRequestTableViewCell.swift; sourceTree = "<group>"; };
-		96CB3B201FC5019B009A94CF /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
+		96B3EC881FC5570C008FB664 /* FriendRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestTableViewCell.swift; sourceTree = "<group>"; };
+		96E582991FC6004A00D8834A /* NearbyUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUserTableViewCell.swift; sourceTree = "<group>"; };
+		96E5829D1FC6011000D8834A /* DiscoverUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUserViewController.swift; sourceTree = "<group>"; };
+		96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
 		980284E51FC3E0A0006F689B /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		980284E71FC3E0E2006F689B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		980284E91FC3E14B006F689B /* FriendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequest.swift; sourceTree = "<group>"; };
@@ -141,11 +141,11 @@
 				964AEB131FC4B38E00FD381B /* LoginViewController.swift */,
 				964AEB141FC4B38E00FD381B /* LoginViewController.xib */,
 				964AEB171FC4BC9F00FD381B /* UserLoader.swift */,
-				96CB3B1E1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift */,
-				96CB3B201FC5019B009A94CF /* FriendRequestViewController.swift */,
-				962CDE5E1FC5135B00376F2F /* DiscoverController.swift */,
-				962CDE641FC5154800376F2F /* NearbyUserTableViewCell.swift */,
-				962CDE661FC5164100376F2F /* DiscoverUserTableViewController.swift */,
+				96B3EC881FC5570C008FB664 /* FriendRequestTableViewCell.swift */,
+				963D32EB1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift */,
+				96E582991FC6004A00D8834A /* NearbyUserTableViewCell.swift */,
+				96E5829D1FC6011000D8834A /* DiscoverUserViewController.swift */,
+				96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */,
 			);
 			path = Vibe_Prototype2;
 			sourceTree = "<group>";
@@ -385,18 +385,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E5829E1FC6011000D8834A /* DiscoverUserViewController.swift in Sources */,
 				964AEB151FC4B38E00FD381B /* LoginViewController.swift in Sources */,
-				96CB3B1F1FC4FD02009A94CF /* FrinedRequestTableViewCell.swift in Sources */,
 				964AEB181FC4BC9F00FD381B /* UserLoader.swift in Sources */,
+				963D32EC1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift in Sources */,
+				96E582A01FC6022E00D8834A /* FriendRequestViewController.swift in Sources */,
 				980961641FC3C73A007577F0 /* Vibe_Prototype2.xcdatamodeld in Sources */,
 				980284E61FC3E0A0006F689B /* Consts.swift in Sources */,
 				9809615E1FC3C73A007577F0 /* ViewController.swift in Sources */,
-				96CB3B211FC5019B009A94CF /* FriendRequestViewController.swift in Sources */,
-				962CDE651FC5154800376F2F /* NearbyUserTableViewCell.swift in Sources */,
-				962CDE5F1FC5135B00376F2F /* DiscoverController.swift in Sources */,
 				980284E81FC3E0E2006F689B /* User.swift in Sources */,
-				962CDE671FC5164100376F2F /* DiscoverUserTableViewController.swift in Sources */,
+				96E5829A1FC6004A00D8834A /* NearbyUserTableViewCell.swift in Sources */,
 				9809615C1FC3C73A007577F0 /* AppDelegate.swift in Sources */,
+				96B3EC891FC5570C008FB664 /* FriendRequestTableViewCell.swift in Sources */,
 				980284EA1FC3E14B006F689B /* FriendRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
