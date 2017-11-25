@@ -18,6 +18,7 @@
 		96E582A01FC6022E00D8834A /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */; };
 		96E582A21FC607B400D8834A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96E582A11FC607B400D8834A /* GoogleService-Info.plist */; };
 		96EC7AB61FC9138E00409E54 /* LoginFailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC7AB51FC9138E00409E54 /* LoginFailedViewController.swift */; };
+		96EC7AB81FC9181600409E54 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EC7AB71FC9181600409E54 /* AddFriendViewController.swift */; };
 		980284E61FC3E0A0006F689B /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980284E51FC3E0A0006F689B /* Consts.swift */; };
 		980284E81FC3E0E2006F689B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980284E71FC3E0E2006F689B /* User.swift */; };
 		980284EA1FC3E14B006F689B /* FriendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980284E91FC3E14B006F689B /* FriendRequest.swift */; };
@@ -60,6 +61,7 @@
 		96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
 		96E582A11FC607B400D8834A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		96EC7AB51FC9138E00409E54 /* LoginFailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFailedViewController.swift; sourceTree = "<group>"; };
+		96EC7AB71FC9181600409E54 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		980284E51FC3E0A0006F689B /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		980284E71FC3E0E2006F689B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		980284E91FC3E14B006F689B /* FriendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequest.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				96E5829D1FC6011000D8834A /* DiscoverUserViewController.swift */,
 				96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */,
 				96EC7AB51FC9138E00409E54 /* LoginFailedViewController.swift */,
+				96EC7AB71FC9181600409E54 /* AddFriendViewController.swift */,
 			);
 			path = Vibe_Prototype2;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				980284E81FC3E0E2006F689B /* User.swift in Sources */,
 				96E5829A1FC6004A00D8834A /* NearbyUserTableViewCell.swift in Sources */,
 				9809615C1FC3C73A007577F0 /* AppDelegate.swift in Sources */,
+				96EC7AB81FC9181600409E54 /* AddFriendViewController.swift in Sources */,
 				96B3EC891FC5570C008FB664 /* FriendRequestTableViewCell.swift in Sources */,
 				980284EA1FC3E14B006F689B /* FriendRequest.swift in Sources */,
 			);

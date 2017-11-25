@@ -9,7 +9,7 @@
 import UIKit
 
 class DiscoverUserViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-        
+    
     @IBOutlet weak var tableView: UITableView!
     var users = [User]()
         
@@ -39,7 +39,7 @@ class DiscoverUserViewController: UIViewController, UITableViewDelegate, UITable
             let user = users[indexPath.row]
             cell.userName?.text = user.name
             cell.userStatus?.text = user.status
-            
+            cell.parent = self
             return cell
         }
         
