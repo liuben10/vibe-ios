@@ -38,7 +38,9 @@ class LoginViewController: UIViewController {
             switch loginResult {
             case .failed(let error):
                 print(error)
+                self.performSegue(withIdentifier: "loginFailed", sender: nil)
             case .cancelled:
+                self.performSegue(withIdentifier: "loginFailed", sender: nil)
                 print("User cancelled login.")
             case .success(let grantedPermissions, let declinedPermissions, let accessToken):
                 self.getFBUserData()
