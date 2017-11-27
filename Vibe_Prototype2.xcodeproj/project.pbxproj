@@ -13,6 +13,7 @@
 		964AEB161FC4B38E00FD381B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AEB141FC4B38E00FD381B /* LoginViewController.xib */; };
 		964AEB181FC4BC9F00FD381B /* UserLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AEB171FC4BC9F00FD381B /* UserLoader.swift */; };
 		96B3EC891FC5570C008FB664 /* FriendRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EC881FC5570C008FB664 /* FriendRequestTableViewCell.swift */; };
+		96CF15EE1FCCC7570013276B /* DatabaseAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF15ED1FCCC7570013276B /* DatabaseAccess.swift */; };
 		96E5829A1FC6004A00D8834A /* NearbyUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E582991FC6004A00D8834A /* NearbyUserTableViewCell.swift */; };
 		96E5829E1FC6011000D8834A /* DiscoverUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5829D1FC6011000D8834A /* DiscoverUserViewController.swift */; };
 		96E582A01FC6022E00D8834A /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */; };
@@ -56,6 +57,7 @@
 		964AEB141FC4B38E00FD381B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		964AEB171FC4BC9F00FD381B /* UserLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoader.swift; sourceTree = "<group>"; };
 		96B3EC881FC5570C008FB664 /* FriendRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestTableViewCell.swift; sourceTree = "<group>"; };
+		96CF15ED1FCCC7570013276B /* DatabaseAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAccess.swift; sourceTree = "<group>"; };
 		96E582991FC6004A00D8834A /* NearbyUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUserTableViewCell.swift; sourceTree = "<group>"; };
 		96E5829D1FC6011000D8834A /* DiscoverUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUserViewController.swift; sourceTree = "<group>"; };
 		96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */,
 				96EC7AB51FC9138E00409E54 /* LoginFailedViewController.swift */,
 				96EC7AB71FC9181600409E54 /* AddFriendViewController.swift */,
+				96CF15ED1FCCC7570013276B /* DatabaseAccess.swift */,
 			);
 			path = Vibe_Prototype2;
 			sourceTree = "<group>";
@@ -374,7 +377,9 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -384,7 +389,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +412,7 @@
 				963D32EC1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift in Sources */,
 				96E582A01FC6022E00D8834A /* FriendRequestViewController.swift in Sources */,
 				980961641FC3C73A007577F0 /* Vibe_Prototype2.xcdatamodeld in Sources */,
+				96CF15EE1FCCC7570013276B /* DatabaseAccess.swift in Sources */,
 				980284E61FC3E0A0006F689B /* Consts.swift in Sources */,
 				96EC7AB61FC9138E00409E54 /* LoginFailedViewController.swift in Sources */,
 				9809615E1FC3C73A007577F0 /* ViewController.swift in Sources */,

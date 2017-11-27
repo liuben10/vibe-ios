@@ -10,9 +10,11 @@ import UIKit
 
 import FacebookLogin
 import FBSDKLoginKit
+import Firebase
+import FirebaseAuth
 
-class LoginViewController: UIViewController {
 
+class LoginViewController: UIViewController, LoginButtonDelegate {
     var dict : [String : AnyObject]!
 
     override func viewDidLoad() {
@@ -20,6 +22,7 @@ class LoginViewController: UIViewController {
         
         let loginButton = LoginButton(readPermissions: [ .publicProfile ])
         loginButton.center = view.center
+        loginButton.delegate = self
         
         view.addSubview(loginButton)
         // Do any additional setup after loading the view.
@@ -31,22 +34,22 @@ class LoginViewController: UIViewController {
     }
     
     
-    //when login button clicked
-    @objc func loginButtonClicked() {
-        let loginManager = LoginManager()
-        loginManager.logIn(readPermissions: [.publicProfile, .email], viewController: self) { loginResult in
-            switch loginResult {
-            case .failed(let error):
-                print(error)
-                self.performSegue(withIdentifier: "loginFailed", sender: nil)
-            case .cancelled:
-            self.performSegue(withIdentifier: "loginFailed", sender: nil)
-                print("User cancelled login.")
-            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
-                self.getFBUserData()
-            }
-        }
-    }
+//    when login button clicked
+//    @objc func loginButtonClicked() {
+//        let loginManager = LoginManager()
+//        loginManager.logIn(readPermissions: [.publicProfile, .email], viewController: self) { loginResult in
+//            switch loginResult {
+//            case .failed(let error):
+//                print(error)
+//                self.performSegue(withIdentifier: "loginFailed", sender: nil)
+//            case .cancelled:
+//            self.performSegue(withIdentifier: "loginFailed", sender: nil)
+//                print("User cancelled login.")
+//            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
+//                self.getFBUserData()
+//            }
+//        }
+//    }
     
     //function is fetching the user data
     func getFBUserData(){
@@ -60,6 +63,33 @@ class LoginViewController: UIViewController {
             })
         }
     }
+    
+    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
+        switch result {
+        case .failed(let error):
+            print(error)
+            self.performSegue(withIdentifier: "loginFailed", sender: nil)
+        case .success(let grantedPermissions, let declinedPermissions, let accessToken):
+            self.getFBUserData()
+            let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+            Auth.auth().signIn(with: credential) { (user, error) in
+                if let error = error {
+                    print("WTF")
+                    return
+                }
+            }
+        case .cancelled:
+            self.performSegue(withIdentifier: "loginFailed", sender: nil)
+            print("User cancelled login.")
+        default:
+            print("Dont know what happened")
+        }
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: LoginButton) {
+        print("Logged out")
+    }
+    
 
     /*
     // MARK: - Navigation
