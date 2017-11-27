@@ -20,7 +20,7 @@
         <!--Login View Controller-->
         <scene sceneID="myl-wS-S0y">
             <objects>
-                <viewController id="Uvr-AU-OrX" customClass="LoginViewController" customModule="Vibe_Prototype2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uvr-AU-OrX" customClass="LoginViewController" customModule="Vibe_Prototype2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svt-1n-LFn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,10 +305,10 @@
             </objects>
             <point key="canvasLocation" x="4098" y="99"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Discover Navigation View Controller-->
         <scene sceneID="pgb-T4-2BY">
             <objects>
-                <navigationController id="deF-vi-fMc" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DiscoverNavigationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="deF-vi-fMc" customClass="DiscoverNavigationViewController" customModule="Vibe_Prototype2" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k0O-YW-WNs">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -592,7 +592,4 @@
             <point key="canvasLocation" x="1138" y="301"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="P6m-qW-dYD"/>
-    </inferredMetricsTieBreakers>
 </document>

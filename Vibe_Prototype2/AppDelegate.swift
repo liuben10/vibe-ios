@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import FBSDKLoginKit
 import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         Database.database().isPersistenceEnabled = true
-        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        let fsbdLoginView = FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        if (Auth.auth().currentUser != nil) {
+            let rootController = mainStoryboard.instantiateViewController(withIdentifier: "DiscoverNavigationViewController")
+            self.window?.rootViewController = rootController
+        } else {
+            let rootController = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController")
+            self.window?.rootViewController = rootController
+        }
+        
+        return fsbdLoginView
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {

@@ -20,6 +20,12 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if Auth.auth().currentUser != nil {
+            print("User is currently logged in")
+        } else {
+            //User Not logged in
+        }
+        
         let loginButton = LoginButton(readPermissions: [ .publicProfile ])
         loginButton.center = view.center
         loginButton.delegate = self
@@ -32,24 +38,6 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-//    when login button clicked
-//    @objc func loginButtonClicked() {
-//        let loginManager = LoginManager()
-//        loginManager.logIn(readPermissions: [.publicProfile, .email], viewController: self) { loginResult in
-//            switch loginResult {
-//            case .failed(let error):
-//                print(error)
-//                self.performSegue(withIdentifier: "loginFailed", sender: nil)
-//            case .cancelled:
-//            self.performSegue(withIdentifier: "loginFailed", sender: nil)
-//                print("User cancelled login.")
-//            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
-//                self.getFBUserData()
-//            }
-//        }
-//    }
     
     //function is fetching the user data
     func getFBUserData(){
@@ -74,7 +62,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
             let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
             Auth.auth().signIn(with: credential) { (user, error) in
                 if let error = error {
-                    print("WTF")
+                    print("Error=" + String(describing: error))
                     return
                 }
             }
@@ -87,7 +75,13 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     }
     
     func loginButtonDidLogOut(_ loginButton: LoginButton) {
-        print("Logged out")
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            print("Logged out")
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
     }
     
 
