@@ -66,6 +66,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
                     return
                 }
             }
+            self.performSegue(withIdentifier: "loginSuccess", sender: nil)
         case .cancelled:
             self.performSegue(withIdentifier: "loginFailed", sender: nil)
             print("User cancelled login.")

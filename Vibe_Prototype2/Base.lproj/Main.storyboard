@@ -29,6 +29,7 @@
                     </view>
                     <connections>
                         <segue destination="YUQ-0q-sS3" kind="show" identifier="loginFailed" id="CzN-dF-cfC"/>
+                        <segue destination="deF-vi-fMc" kind="presentation" identifier="loginSuccess" id="2uD-Ts-t7R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cxx-lr-MWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -324,7 +325,7 @@
         <!--Discover-->
         <scene sceneID="hBe-nI-PBg">
             <objects>
-                <viewController id="19c-Ne-Agh" sceneMemberID="viewController">
+                <viewController id="19c-Ne-Agh" customClass="DiscoverBarViewController" customModule="Vibe_Prototype2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z8h-Xb-Obq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -350,7 +351,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="T46-NB-QR8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Discover" id="q1D-Vl-m9k"/>
+                    <navigationItem key="navigationItem" title="Discover" id="q1D-Vl-m9k">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="ePt-YL-6sw">
+                            <connections>
+                                <segue destination="Uvr-AU-OrX" kind="presentation" id="nrV-ba-u24"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cpm-bt-cAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -592,4 +599,7 @@
             <point key="canvasLocation" x="1138" y="301"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nrV-ba-u24"/>
+    </inferredMetricsTieBreakers>
 </document>

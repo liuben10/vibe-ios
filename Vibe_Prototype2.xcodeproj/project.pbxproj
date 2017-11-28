@@ -14,6 +14,7 @@
 		964AEB181FC4BC9F00FD381B /* UserLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AEB171FC4BC9F00FD381B /* UserLoader.swift */; };
 		966AB4251FCCD46300A17FCD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966AB4241FCCD46300A17FCD /* MainViewController.swift */; };
 		966AB4291FCCD8C900A17FCD /* DiscoverNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966AB4281FCCD8C900A17FCD /* DiscoverNavigationViewController.swift */; };
+		966AB4311FCCF07C00A17FCD /* DiscoverBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966AB4301FCCF07C00A17FCD /* DiscoverBarViewController.swift */; };
 		96B3EC891FC5570C008FB664 /* FriendRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EC881FC5570C008FB664 /* FriendRequestTableViewCell.swift */; };
 		96CF15EE1FCCC7570013276B /* DatabaseAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF15ED1FCCC7570013276B /* DatabaseAccess.swift */; };
 		96E5829A1FC6004A00D8834A /* NearbyUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E582991FC6004A00D8834A /* NearbyUserTableViewCell.swift */; };
@@ -60,6 +61,7 @@
 		964AEB171FC4BC9F00FD381B /* UserLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoader.swift; sourceTree = "<group>"; };
 		966AB4241FCCD46300A17FCD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		966AB4281FCCD8C900A17FCD /* DiscoverNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverNavigationViewController.swift; sourceTree = "<group>"; };
+		966AB4301FCCF07C00A17FCD /* DiscoverBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverBarViewController.swift; sourceTree = "<group>"; };
 		96B3EC881FC5570C008FB664 /* FriendRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestTableViewCell.swift; sourceTree = "<group>"; };
 		96CF15ED1FCCC7570013276B /* DatabaseAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAccess.swift; sourceTree = "<group>"; };
 		96E582991FC6004A00D8834A /* NearbyUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUserTableViewCell.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				96CF15ED1FCCC7570013276B /* DatabaseAccess.swift */,
 				966AB4241FCCD46300A17FCD /* MainViewController.swift */,
 				966AB4281FCCD8C900A17FCD /* DiscoverNavigationViewController.swift */,
+				966AB4301FCCF07C00A17FCD /* DiscoverBarViewController.swift */,
 			);
 			path = Vibe_Prototype2;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 			files = (
 				96E5829E1FC6011000D8834A /* DiscoverUserViewController.swift in Sources */,
 				964AEB151FC4B38E00FD381B /* LoginViewController.swift in Sources */,
+				966AB4311FCCF07C00A17FCD /* DiscoverBarViewController.swift in Sources */,
 				964AEB181FC4BC9F00FD381B /* UserLoader.swift in Sources */,
 				963D32EC1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift in Sources */,
 				96E582A01FC6022E00D8834A /* FriendRequestViewController.swift in Sources */,
