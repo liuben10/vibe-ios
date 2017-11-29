@@ -8,13 +8,19 @@
 
 import Foundation
 
+import FirebaseDatabase
+
 
 class FriendRequest {
-    var requestorId: Int
-    var friendId: Int
+    var key: String
+    var requestorId: String
+    var requestedId: String
+    let ref: DatabaseReference?
     
-    init(requestorId: Int, friendId: Int) {
+    init(key: String, requestorId: String, requestedId: String) {
         self.requestorId = requestorId
-        self.friendId = friendId
+        self.requestedId = requestedId
+        self.ref = nil
+        self.key = key
     }
 }

@@ -22,7 +22,7 @@ class DiscoverUserViewController: UIViewController, UITableViewDelegate, UITable
             tableView.delegate = self
             tableView.dataSource = self
         }
-        
+    
         override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
         }

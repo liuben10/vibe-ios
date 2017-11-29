@@ -10,9 +10,11 @@ import UIKit
 
 class NearbyUserTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var buttonLabel: UIButton!
     @IBAction func createFriendRequest(_ sender: Any) {
         print("Creating Friend Request");
-        self.parent.performSegue(withIdentifier: "createFriendRequest", sender: self)
+        self.buttonLabel.setTitle("Requested", for: .normal)
+        
     }
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userStatus: UILabel!
@@ -25,8 +27,6 @@ class NearbyUserTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

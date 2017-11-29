@@ -9,6 +9,8 @@
 import UIKit
 
 class AddFriendViewController: UIViewController {
+    
+    weak var friendRequest: FriendRequest?
 
     override func viewDidLoad() {
         super.viewDidLoad()

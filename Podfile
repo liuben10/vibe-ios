@@ -5,4 +5,5 @@ target 'Vibe_Prototype2' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+  pod 'BlueCapKit', '~> 0.6'
 end

@@ -39,7 +39,7 @@ class FriendRequestViewController: UIViewController, UITableViewDelegate, UITabl
         let friendRequest = friendRequests[indexPath.row]
         
         cell.fromRequestId!.text = String(friendRequest.requestorId)
-        cell.toRequestId!.text = String(friendRequest.friendId)
+        cell.toRequestId!.text = String(friendRequest.requestedId)
         
         return cell
     }

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		944FAEB2020A5C56545AA4DF /* Pods_Vibe_Prototype2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BEF71295CA87FA51AEDC4 /* Pods_Vibe_Prototype2.framework */; };
+		96303C191FCE761100D4B3E3 /* vibe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96303C101FCE761100D4B3E3 /* vibe.framework */; };
+		96303C201FCE761100D4B3E3 /* vibeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96303C1F1FCE761100D4B3E3 /* vibeTests.swift */; };
+		96303C221FCE761100D4B3E3 /* vibe.h in Headers */ = {isa = PBXBuildFile; fileRef = 96303C121FCE761100D4B3E3 /* vibe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96303C251FCE761100D4B3E3 /* vibe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96303C101FCE761100D4B3E3 /* vibe.framework */; };
+		96303C261FCE761100D4B3E3 /* vibe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96303C101FCE761100D4B3E3 /* vibe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		96303C2F1FCE766300D4B3E3 /* BlueCapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96303C2E1FCE766300D4B3E3 /* BlueCapKit.framework */; };
 		963D32EC1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D32EB1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift */; };
 		964AEB151FC4B38E00FD381B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964AEB131FC4B38E00FD381B /* LoginViewController.swift */; };
 		964AEB161FC4B38E00FD381B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AEB141FC4B38E00FD381B /* LoginViewController.xib */; };
@@ -17,6 +23,7 @@
 		966AB4311FCCF07C00A17FCD /* DiscoverBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966AB4301FCCF07C00A17FCD /* DiscoverBarViewController.swift */; };
 		96B3EC891FC5570C008FB664 /* FriendRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EC881FC5570C008FB664 /* FriendRequestTableViewCell.swift */; };
 		96CF15EE1FCCC7570013276B /* DatabaseAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CF15ED1FCCC7570013276B /* DatabaseAccess.swift */; };
+		96DA04C71FCE3A1F000D9F8C /* FriendRequestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA04C61FCE3A1F000D9F8C /* FriendRequestRepository.swift */; };
 		96E5829A1FC6004A00D8834A /* NearbyUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E582991FC6004A00D8834A /* NearbyUserTableViewCell.swift */; };
 		96E5829E1FC6011000D8834A /* DiscoverUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5829D1FC6011000D8834A /* DiscoverUserViewController.swift */; };
 		96E582A01FC6022E00D8834A /* FriendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */; };
@@ -37,6 +44,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		96303C1A1FCE761100D4B3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 980961501FC3C73A007577F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96303C0F1FCE761100D4B3E3;
+			remoteInfo = vibe;
+		};
+		96303C1C1FCE761100D4B3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 980961501FC3C73A007577F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 980961571FC3C73A007577F0;
+			remoteInfo = Vibe_Prototype2;
+		};
+		96303C231FCE761100D4B3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 980961501FC3C73A007577F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96303C0F1FCE761100D4B3E3;
+			remoteInfo = vibe;
+		};
 		980961701FC3C73A007577F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 980961501FC3C73A007577F0 /* Project object */;
@@ -53,8 +81,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		96303C2C1FCE761100D4B3E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				96303C261FCE761100D4B3E3 /* vibe.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		073BEF71295CA87FA51AEDC4 /* Pods_Vibe_Prototype2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vibe_Prototype2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96303C101FCE761100D4B3E3 /* vibe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = vibe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96303C121FCE761100D4B3E3 /* vibe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vibe.h; sourceTree = "<group>"; };
+		96303C131FCE761100D4B3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96303C181FCE761100D4B3E3 /* vibeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vibeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96303C1F1FCE761100D4B3E3 /* vibeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vibeTests.swift; sourceTree = "<group>"; };
+		96303C211FCE761100D4B3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96303C2E1FCE766300D4B3E3 /* BlueCapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BlueCapKit.framework; path = Carthage/Build/iOS/BlueCapKit.framework; sourceTree = "<group>"; };
 		963D32EB1FC5F13300A7AD1E /* DiscoverTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTabBarViewController.swift; sourceTree = "<group>"; };
 		964AEB131FC4B38E00FD381B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		964AEB141FC4B38E00FD381B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -64,6 +113,7 @@
 		966AB4301FCCF07C00A17FCD /* DiscoverBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverBarViewController.swift; sourceTree = "<group>"; };
 		96B3EC881FC5570C008FB664 /* FriendRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestTableViewCell.swift; sourceTree = "<group>"; };
 		96CF15ED1FCCC7570013276B /* DatabaseAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAccess.swift; sourceTree = "<group>"; };
+		96DA04C61FCE3A1F000D9F8C /* FriendRequestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestRepository.swift; sourceTree = "<group>"; };
 		96E582991FC6004A00D8834A /* NearbyUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUserTableViewCell.swift; sourceTree = "<group>"; };
 		96E5829D1FC6011000D8834A /* DiscoverUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUserViewController.swift; sourceTree = "<group>"; };
 		96E5829F1FC6022E00D8834A /* FriendRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestViewController.swift; sourceTree = "<group>"; };
@@ -92,10 +142,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		96303C0C1FCE761100D4B3E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96303C151FCE761100D4B3E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96303C191FCE761100D4B3E3 /* vibe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		980961551FC3C73A007577F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96303C2F1FCE766300D4B3E3 /* BlueCapKit.framework in Frameworks */,
+				96303C251FCE761100D4B3E3 /* vibe.framework in Frameworks */,
 				944FAEB2020A5C56545AA4DF /* Pods_Vibe_Prototype2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,12 +184,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96303C111FCE761100D4B3E3 /* vibe */ = {
+			isa = PBXGroup;
+			children = (
+				96303C121FCE761100D4B3E3 /* vibe.h */,
+				96303C131FCE761100D4B3E3 /* Info.plist */,
+			);
+			path = vibe;
+			sourceTree = "<group>";
+		};
+		96303C1E1FCE761100D4B3E3 /* vibeTests */ = {
+			isa = PBXGroup;
+			children = (
+				96303C1F1FCE761100D4B3E3 /* vibeTests.swift */,
+				96303C211FCE761100D4B3E3 /* Info.plist */,
+			);
+			path = vibeTests;
+			sourceTree = "<group>";
+		};
 		9809614F1FC3C73A007577F0 = {
 			isa = PBXGroup;
 			children = (
 				9809615A1FC3C73A007577F0 /* Vibe_Prototype2 */,
 				980961721FC3C73A007577F0 /* Vibe_Prototype2Tests */,
 				9809617D1FC3C73A007577F0 /* Vibe_Prototype2UITests */,
+				96303C111FCE761100D4B3E3 /* vibe */,
+				96303C1E1FCE761100D4B3E3 /* vibeTests */,
 				980961591FC3C73A007577F0 /* Products */,
 				CF00E1AF512CBF4F529EFF98 /* Pods */,
 				A8949E05B621FD667ADEAE45 /* Frameworks */,
@@ -135,6 +222,8 @@
 				980961581FC3C73A007577F0 /* Vibe_Prototype2.app */,
 				9809616F1FC3C73A007577F0 /* Vibe_Prototype2Tests.xctest */,
 				9809617A1FC3C73A007577F0 /* Vibe_Prototype2UITests.xctest */,
+				96303C101FCE761100D4B3E3 /* vibe.framework */,
+				96303C181FCE761100D4B3E3 /* vibeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +256,7 @@
 				966AB4241FCCD46300A17FCD /* MainViewController.swift */,
 				966AB4281FCCD8C900A17FCD /* DiscoverNavigationViewController.swift */,
 				966AB4301FCCF07C00A17FCD /* DiscoverBarViewController.swift */,
+				96DA04C61FCE3A1F000D9F8C /* FriendRequestRepository.swift */,
 			);
 			path = Vibe_Prototype2;
 			sourceTree = "<group>";
@@ -192,6 +282,7 @@
 		A8949E05B621FD667ADEAE45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96303C2E1FCE766300D4B3E3 /* BlueCapKit.framework */,
 				073BEF71295CA87FA51AEDC4 /* Pods_Vibe_Prototype2.framework */,
 			);
 			name = Frameworks;
@@ -208,7 +299,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		96303C0D1FCE761100D4B3E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96303C221FCE761100D4B3E3 /* vibe.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		96303C0F1FCE761100D4B3E3 /* vibe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96303C2B1FCE761100D4B3E3 /* Build configuration list for PBXNativeTarget "vibe" */;
+			buildPhases = (
+				96303C0B1FCE761100D4B3E3 /* Sources */,
+				96303C0C1FCE761100D4B3E3 /* Frameworks */,
+				96303C0D1FCE761100D4B3E3 /* Headers */,
+				96303C0E1FCE761100D4B3E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vibe;
+			productName = vibe;
+			productReference = 96303C101FCE761100D4B3E3 /* vibe.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96303C171FCE761100D4B3E3 /* vibeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96303C2D1FCE761100D4B3E3 /* Build configuration list for PBXNativeTarget "vibeTests" */;
+			buildPhases = (
+				96303C141FCE761100D4B3E3 /* Sources */,
+				96303C151FCE761100D4B3E3 /* Frameworks */,
+				96303C161FCE761100D4B3E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96303C1B1FCE761100D4B3E3 /* PBXTargetDependency */,
+				96303C1D1FCE761100D4B3E3 /* PBXTargetDependency */,
+			);
+			name = vibeTests;
+			productName = vibeTests;
+			productReference = 96303C181FCE761100D4B3E3 /* vibeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		980961571FC3C73A007577F0 /* Vibe_Prototype2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 980961831FC3C73A007577F0 /* Build configuration list for PBXNativeTarget "Vibe_Prototype2" */;
@@ -219,10 +358,12 @@
 				980961561FC3C73A007577F0 /* Resources */,
 				29FF30517EA0496AC716C829 /* [CP] Embed Pods Frameworks */,
 				243520138F6420C1DC7B04C3 /* [CP] Copy Pods Resources */,
+				96303C2C1FCE761100D4B3E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				96303C241FCE761100D4B3E3 /* PBXTargetDependency */,
 			);
 			name = Vibe_Prototype2;
 			productName = Vibe_Prototype2;
@@ -275,6 +416,15 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Danny Shin";
 				TargetAttributes = {
+					96303C0F1FCE761100D4B3E3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					96303C171FCE761100D4B3E3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 980961571FC3C73A007577F0;
+					};
 					980961571FC3C73A007577F0 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -307,11 +457,27 @@
 				980961571FC3C73A007577F0 /* Vibe_Prototype2 */,
 				9809616E1FC3C73A007577F0 /* Vibe_Prototype2Tests */,
 				980961791FC3C73A007577F0 /* Vibe_Prototype2UITests */,
+				96303C0F1FCE761100D4B3E3 /* vibe */,
+				96303C171FCE761100D4B3E3 /* vibeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		96303C0E1FCE761100D4B3E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96303C161FCE761100D4B3E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		980961561FC3C73A007577F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +577,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		96303C0B1FCE761100D4B3E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96303C141FCE761100D4B3E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96303C201FCE761100D4B3E3 /* vibeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		980961541FC3C73A007577F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,6 +609,7 @@
 				966AB4291FCCD8C900A17FCD /* DiscoverNavigationViewController.swift in Sources */,
 				96EC7AB61FC9138E00409E54 /* LoginFailedViewController.swift in Sources */,
 				9809615E1FC3C73A007577F0 /* ViewController.swift in Sources */,
+				96DA04C71FCE3A1F000D9F8C /* FriendRequestRepository.swift in Sources */,
 				980284E81FC3E0E2006F689B /* User.swift in Sources */,
 				96E5829A1FC6004A00D8834A /* NearbyUserTableViewCell.swift in Sources */,
 				9809615C1FC3C73A007577F0 /* AppDelegate.swift in Sources */,
@@ -456,6 +638,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		96303C1B1FCE761100D4B3E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96303C0F1FCE761100D4B3E3 /* vibe */;
+			targetProxy = 96303C1A1FCE761100D4B3E3 /* PBXContainerItemProxy */;
+		};
+		96303C1D1FCE761100D4B3E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 980961571FC3C73A007577F0 /* Vibe_Prototype2 */;
+			targetProxy = 96303C1C1FCE761100D4B3E3 /* PBXContainerItemProxy */;
+		};
+		96303C241FCE761100D4B3E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96303C0F1FCE761100D4B3E3 /* vibe */;
+			targetProxy = 96303C231FCE761100D4B3E3 /* PBXContainerItemProxy */;
+		};
 		980961711FC3C73A007577F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 980961571FC3C73A007577F0 /* Vibe_Prototype2 */;
@@ -488,6 +685,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		96303C271FCE761100D4B3E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = vibe/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.vibe;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96303C281FCE761100D4B3E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = vibe/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.vibe;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96303C291FCE761100D4B3E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vibeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.vibeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vibe_Prototype2.app/Vibe_Prototype2";
+			};
+			name = Debug;
+		};
+		96303C2A1FCE761100D4B3E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vibeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.vibeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vibe_Prototype2.app/Vibe_Prototype2";
+			};
+			name = Release;
+		};
 		980961811FC3C73A007577F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -601,6 +874,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Vibe_Prototype2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vibe.Vibe-Prototype2";
@@ -616,6 +893,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Vibe_Prototype2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vibe.Vibe-Prototype2";
@@ -690,6 +971,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		96303C2B1FCE761100D4B3E3 /* Build configuration list for PBXNativeTarget "vibe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96303C271FCE761100D4B3E3 /* Debug */,
+				96303C281FCE761100D4B3E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96303C2D1FCE761100D4B3E3 /* Build configuration list for PBXNativeTarget "vibeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96303C291FCE761100D4B3E3 /* Debug */,
+				96303C2A1FCE761100D4B3E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		980961531FC3C73A007577F0 /* Build configuration list for PBXProject "Vibe_Prototype2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

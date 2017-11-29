@@ -11,9 +11,9 @@ import Foundation
 
 class Const {
     
-    static let users = [User(id: 1, name: "Alice", status: "Happy"), User(id: 2, name: "Bob", status: "Sad"), User(id: 3, name: "Chloe", status: "Tepid")]
+    static let users = [User(key: "1", name: "Alice", status: "Happy"), User(key: "2", name: "Bob", status: "Sad"), User(key: "3", name: "Chloe", status: "Tepid")]
     
-    static let friendRequests = [FriendRequest(requestorId: 1, friendId: 2)]
+    static let friendRequests = [FriendRequest(key: "foobar", requestorId: "1", requestedId: "2")]
     
     init() {
         

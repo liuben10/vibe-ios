@@ -467,6 +467,7 @@
                                             <accessibilityTraits key="traits" button="YES"/>
                                         </accessibility>
                                         <connections>
+                                            <outlet property="buttonLabel" destination="DVD-Rr-RCy" id="chE-gM-B4k"/>
                                             <outlet property="userName" destination="44l-FS-4Ya" id="iob-55-eHs"/>
                                             <outlet property="userStatus" destination="P7p-a0-Kr8" id="mNJ-7R-saq"/>
                                         </connections>

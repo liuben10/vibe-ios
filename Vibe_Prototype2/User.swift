@@ -9,12 +9,12 @@
 import Foundation
 
 class User {
-    var id:Int
+    var key:String
     var name:String
     var status:String
     
-    init(id: Int, name:String, status:String) {
-        self.id = id
+    init(key: String, name:String, status:String) {
+        self.key = key
         self.name = name
         self.status = status
     }

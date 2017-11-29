@@ -3,3 +3,5 @@ Vibe_Prototype2.xcodeproj/project.xcworkspace/xcuserdata/
 Pods/
 Vibe_Prototype2.xcodeproj/xcuserdata/*
 Vibe_Prototype2.xcworkspace/xcuserdata/*
+Cartfile.resolved
+Carthage
