@@ -457,9 +457,6 @@
                                                     <rect key="frame" x="240" y="9" width="114" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Add Friend"/>
-                                                    <connections>
-                                                        <segue destination="x1b-Ql-0J0" kind="show" identifier="createFriendRequest" id="F4D-LE-19c"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -492,7 +489,7 @@
             <objects>
                 <viewController id="x1b-Ql-0J0" customClass="AddFriendViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlD-YB-Yjn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creating Friend Request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmD-gY-wUz">
