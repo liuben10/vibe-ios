@@ -11,7 +11,6 @@ import CoreBluetooth
 
 import FacebookLogin
 import FBSDKLoginKit
-import BlueCapKit
 
 class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate{
 

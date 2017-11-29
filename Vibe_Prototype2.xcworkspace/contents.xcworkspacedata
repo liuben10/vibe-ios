@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Vibe_Prototype2/BlueCap/BlueCapKit.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Vibe_Prototype2.xcodeproj">
    </FileRef>
    <FileRef

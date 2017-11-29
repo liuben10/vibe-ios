@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BlueCapKit
 
 class DiscoverUserViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
